@@ -229,8 +229,9 @@
 <div class="contact-bar">
   <span class="contact-bar-left">📍 257 Rifle Range Road, Haddon, Johannesburg South</span>
   <div class="contact-bar-right">
+    <span>🕐 Mon–Sun: 7:00 AM – 7:00 PM</span>
     <a href="tel:+27747039943">📞 +27 74 703 9943</a>
-    <a href="mailto:aidan4558@gmail.com">✉️ aidan4558@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#2a4b434e4b441e1f1f126a4d474b434604494547">✉️ <span class="__cf_email__" data-cfemail="bbdad2dfdad58f8e8e83fbdcd6dad2d795d8d4d6">[email&#160;protected]</span></a>
   </div>
 </div>
 
@@ -330,7 +331,7 @@
     <div class="contact-card">
       <div class="contact-icon">✉️</div>
       <h4>Email</h4>
-      <a href="mailto:aidan4558@gmail.com">aidan4558@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#88e9e1ece9e6bcbdbdb0c8efe5e9e1e4a6ebe7e5"><span class="__cf_email__" data-cfemail="3b5a525f5a550f0e0e037b5c565a525715585456">[email&#160;protected]</span></a>
       <p style="font-size:0.76rem;margin-top:0.1rem">We respond within 24 hours</p>
     </div>
   </div>
@@ -421,8 +422,9 @@
     <div class="footer-col">
       <h5>Contact</h5>
       <a href="tel:+27747039943">+27 74 703 9943</a>
-      <a href="mailto:aidan4558@gmail.com">aidan4558@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#8eefe7eaefe0babbbbb6cee9e3efe7e2a0ede1e3"><span class="__cf_email__" data-cfemail="0f6e666b6e613b3a3a374f68626e6663216c6062">[email&#160;protected]</span></a>
       <p>257 Rifle Range Road<br>Haddon, JHB South</p>
+      <p style="margin-top:0.5rem">🕐 <strong>Trading Hours</strong><br>Monday – Sunday<br>7:00 AM – 7:00 PM</p>
     </div>
   </div>
   <div class="footer-bottom">© 2025 PrimeHold · All rights reserved</div>
@@ -458,7 +460,7 @@
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // STATE
 let units     = JSON.parse(localStorage.getItem('ph_units') || '[]');
 let enquiries = JSON.parse(localStorage.getItem('ph_enq')   || '[]');
@@ -687,17 +689,4 @@ function showLb() {
   document.querySelector('.lb-prev').style.display=lbPh.length>1?'':'none';
   document.querySelector('.lb-next').style.display=lbPh.length>1?'':'none';
 }
-function lbNav(d) { lbIdx=(lbIdx+d+lbPh.length)%lbPh.length; showLb(); }
-function closeLb() { document.getElementById('lightbox').classList.remove('open'); }
-document.getElementById('lightbox').addEventListener('click',e=>{ if(e.target===document.getElementById('lightbox')) closeLb(); });
-document.addEventListener('keydown',e=>{
-  if(!document.getElementById('lightbox').classList.contains('open')) return;
-  if(e.key==='ArrowLeft') lbNav(-1);
-  if(e.key==='ArrowRight') lbNav(1);
-  if(e.key==='Escape') closeLb();
-});
-
-renderAll();
-</script>
-</body>
-</html>
+function lbNav(d) { lbIdx=(lbIdx+d+lbPh.length)
